@@ -1,10 +1,12 @@
-import turtle as tu
+import turtle as tu  # importing the tuttle module as tu
 
-wn = tu.Screen()
+wn = tu.Screen()     # creating the screen of 800 by 600 size with black color
 wn.bgcolor("black")
 wn.setup(width=800, height=600)
 wn.title("game")
 wn.tracer(0)
+
+# creating the game objects
 
 # left paddle
 pl = tu.Turtle()
@@ -46,6 +48,7 @@ sc.goto(0, 270)
 sc.speed(0)
 sc.write("PLAYER A : {}   PLAYER B : {}".format(sa, sb), align='center', font=("Algerian", 20, "normal"))
 
+# creating the movements function
 
 # movements
 
@@ -72,6 +75,7 @@ def pr_down():
     y -= 30
     pr.sety(y)
 
+# getting the keyboard inputs
 
 # listening in keyboard
 wn.listen()
@@ -79,6 +83,8 @@ wn.onkeypress(pl_up, 'w')
 wn.onkeypress(pl_down, 's')
 wn.onkeypress(pr_up, 'Up')
 wn.onkeypress(pr_down, 'Down')
+
+# main game loop
 
 while True:
     wn.update()
