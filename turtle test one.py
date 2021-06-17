@@ -1,3 +1,6 @@
+####  USE 'W' AND 'S' FOR LEFT PEDAL AND UP, DOWN ARROW FOR LEFT PEDAL
+
+
 import turtle as tu  # importing the tuttle module as tu
 
 wn = tu.Screen()     # creating the screen of 800 by 600 size with black color
