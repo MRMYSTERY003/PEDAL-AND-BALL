@@ -1,4 +1,4 @@
-# PEDAL-AND-BALL
+# PONG-GAME
 easy and simple game made with python 
 
 
